@@ -282,7 +282,7 @@ object ImagePlugin extends AutoPlugin {
       values.zipWithIndex.foldLeft(Map.empty[String, String]) {
         case (a, e) =>
           val (elem, index) = e
-          if (index == 0) a + (labelBase      -> elem)
+          if (index == 0) a + (labelBase          -> elem)
           else a + (s"$labelBase-overflow-$index" -> elem)
       }
     }
